@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { PostofficeComponent } from './postoffice/postoffice.component';
+import { BabysitterappComponent } from './babysitterapp/babysitterapp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    PostofficeComponent
+    PostofficeComponent,
+    BabysitterappComponent
   ],
   imports: [
     BrowserModule,
