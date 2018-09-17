@@ -12,6 +12,8 @@ import {MatInputModule} from '@angular/material/input';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { FrontpageComponent } from './home/frontpage/frontpage.component';
+import { SubredditComponent } from './home/subreddit/subreddit.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ContactComponent } from './contact/contact.component';
     Register2Component,
     PageNotFoundComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    FrontpageComponent,
+    SubredditComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,5 @@
+import { SubredditComponent } from './home/subreddit/subreddit.component';
+import { FrontpageComponent } from './home/frontpage/frontpage.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
@@ -10,7 +12,17 @@ import { Register2Component } from './register2/register2.component';
 
 const routes: Routes = [  { 
   path: '', redirectTo: 'home', pathMatch: 'full' },
-  {path: 'home', component: HomeComponent},
+
+  
+{path: 'home', component: HomeComponent, children: 
+    [
+      {path: 'frontpage', component: FrontpageComponent},
+      {path: 'subreddit', component: SubredditComponent}
+    ]
+  },
+
+
+
   {path: 'contact', component: ContactComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
