@@ -1,3 +1,4 @@
+import { FindASitterComponent } from './portal/find-a-sitter/find-a-sitter.component';
 import { SubredditComponent } from './home/subreddit/subreddit.component';
 import { FrontpageComponent } from './home/frontpage/frontpage.component';
 import { NgModule } from '@angular/core';
@@ -9,6 +10,7 @@ import { RegisterComponent } from './register/register.component';
 
 import { ContactComponent } from './contact/contact.component';
 import { Register2Component } from './register2/register2.component';
+import { PortalComponent } from './portal/portal.component';
 
 const routes: Routes = [  { 
   path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,7 +23,11 @@ const routes: Routes = [  {
     ]
   },
 
-
+  {path: 'portal', component: PortalComponent, children: 
+  [
+    {path: 'find-a-sitter', component: FindASitterComponent}
+  ]
+},
 
   {path: 'contact', component: ContactComponent},
   {path: 'login', component: LoginComponent},

@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FrontpageComponent } from './home/frontpage/frontpage.component';
 import { SubredditComponent } from './home/subreddit/subreddit.component';
+import { PortalComponent } from './portal/portal.component';
+import { FindASitterComponent } from './portal/find-a-sitter/find-a-sitter.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { SubredditComponent } from './home/subreddit/subreddit.component';
     ContactComponent,
     FrontpageComponent,
     SubredditComponent,
+    PortalComponent,
+    FindASitterComponent,
   ],
   imports: [
     BrowserModule,
