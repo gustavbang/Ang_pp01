@@ -1,10 +1,11 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 .inline {
     display: inline-block; /* the default for span */
     width: 600px;
     height: 400px;
     border: 2px solid rgb(63, 34, 34); 
     background-color: rgb(189, 56, 56); }
-
 .btn{
     display: inline-block;
     padding: 12px 24px;
