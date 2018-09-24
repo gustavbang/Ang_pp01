@@ -1,15 +1,12 @@
-  <h1 class="indent inline">Login</h1>
-
-<form class="indent">
+<form class="indent" novalidate [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">
     <mat-form-field class="example-full-width">
-        <input matInput placeholder="username" value="">
+        <input matInput placeholder="username" formControlName="username" id="username" value="">
       </mat-form-field>
 
       <mat-form-field class="example-full-width">
-          <input matInput placeholder="password" value="">
+          <input matInput placeholder="password" formControlName="password" id="password" value="">
         </mat-form-field>
       
   
-        <button mat-raised-button color="accent">Submit</button>
-        <br><br><br><br><br><br><br><br><br>
+        <button mat-raised-button color="accent" id="btnLogin">Submit</button>
   </form> 

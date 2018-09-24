@@ -18,4 +18,9 @@ export class TempDataService {
     hourlyWage: 100, address: 'some', zipCode: "2400", city: 'København NV', link: "https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/30/2012/09/00000259a-Borat1.jpg"}
   ];
   constructor() { }
+
+
+  public addSitter(sitter: Sitter): void {
+    this.sitters.push(sitter);
+  }
 }

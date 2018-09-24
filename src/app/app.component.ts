@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title = 'AngularTestProject';
-
+/*
   onClickBaby() {
     var y = document.getElementById("register");
     var x = document.getElementById("register2");
@@ -23,11 +23,12 @@ export class AppComponent {
     x.style.display = "block";
     y.style.display = "none";
     console.log("User clicked the sitter");
-  }
-}
+  } 
+
 
 
 window.onload = () => {
     var a = document.getElementById("register");
     a.style.display = "none";
-};
+}; */
+}

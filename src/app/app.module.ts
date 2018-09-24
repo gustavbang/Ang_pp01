@@ -18,6 +18,7 @@ import { PortalComponent } from './portal/portal.component';
 import { SittersListComponent } from './sitters-list/sitters-list.component';
 import {MatCardModule} from '@angular/material/card';
 import { AzatComponent } from './home/frontpage/azat/azat.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { AzatComponent } from './home/frontpage/azat/azat.component';
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
