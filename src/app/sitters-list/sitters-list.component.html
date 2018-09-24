@@ -1,0 +1,15 @@
+<br/>
+
+<mat-card routerLink="azat" class="example-card" *ngFor="let sitter of tempData.sitters" style="height: 20%; width: 20%; display: block; float: left;">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ sitter.name }}</mat-card-title>
+    <mat-card-subtitle>{{ sitter.hourlyWage }} Kr</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src= "{{ sitter.link }}" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    {{ sitter.name }} er fra {{ sitter.city }}. 
+  </mat-card-content>
+</mat-card>
+
+<router-outlet></router-outlet>

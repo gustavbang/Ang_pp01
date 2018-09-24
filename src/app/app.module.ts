@@ -15,7 +15,10 @@ import { ContactComponent } from './contact/contact.component';
 import { FrontpageComponent } from './home/frontpage/frontpage.component';
 import { SubredditComponent } from './home/subreddit/subreddit.component';
 import { PortalComponent } from './portal/portal.component';
-import { FindASitterComponent } from './portal/find-a-sitter/find-a-sitter.component';
+import { SittersListComponent } from './sitters-list/sitters-list.component';
+import {MatCardModule} from '@angular/material/card';
+import { AzatComponent } from './home/frontpage/azat/azat.component';
+
 
 @NgModule({
   declarations: [
@@ -29,14 +32,16 @@ import { FindASitterComponent } from './portal/find-a-sitter/find-a-sitter.compo
     FrontpageComponent,
     SubredditComponent,
     PortalComponent,
-    FindASitterComponent,
+    SittersListComponent,
+    AzatComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
