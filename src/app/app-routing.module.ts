@@ -1,4 +1,3 @@
-import { AzatComponent } from './home/frontpage/azat/azat.component';
 import { SubredditComponent } from './home/subreddit/subreddit.component';
 import { FrontpageComponent } from './home/frontpage/frontpage.component';
 import { NgModule } from '@angular/core';
@@ -19,9 +18,7 @@ const routes: Routes = [  {
   
 {path: 'home', component: HomeComponent, children: 
     [
-      {path: 'frontpage', component: FrontpageComponent, children: [
-          {path: 'azat', component: AzatComponent}
-      ]},
+      {path: 'frontpage', component: FrontpageComponent},
       {path: 'subreddit', component: SubredditComponent}
     ]
   },

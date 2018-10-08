@@ -17,8 +17,8 @@ import { SubredditComponent } from './home/subreddit/subreddit.component';
 import { PortalComponent } from './portal/portal.component';
 import { SittersListComponent } from './sitters-list/sitters-list.component';
 import {MatCardModule} from '@angular/material/card';
-import { AzatComponent } from './home/frontpage/azat/azat.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DisplaySitterComponent } from './portal/display-sitter/display-sitter.component';
 
 
 @NgModule({
@@ -34,7 +34,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SubredditComponent,
     PortalComponent,
     SittersListComponent,
-    AzatComponent,
+    DisplaySitterComponent,
   ],
   imports: [
     BrowserModule,

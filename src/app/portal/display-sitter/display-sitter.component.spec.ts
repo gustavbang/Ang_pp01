@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AzatComponent } from './azat.component';
+import { DisplaySitterComponent } from './display-sitter.component';
 
-describe('AzatComponent', () => {
-  let component: AzatComponent;
-  let fixture: ComponentFixture<AzatComponent>;
+describe('DisplaySitterComponent', () => {
+  let component: DisplaySitterComponent;
+  let fixture: ComponentFixture<DisplaySitterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AzatComponent ]
+      declarations: [ DisplaySitterComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AzatComponent);
+    fixture = TestBed.createComponent(DisplaySitterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
