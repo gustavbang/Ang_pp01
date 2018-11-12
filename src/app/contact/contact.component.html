@@ -1,2 +1,10 @@
 <h1>Contact </h1>
 
+<button (click)="sittersActions.setType(false)">Register as sitter</button>
+
+<button (click)="sittersActions.setType(true)">Register as baby</button>
+
+        <div *ngIf="!isBaby && isBaby !== undefined"><h1>You are registering as a sitter</h1></div>
+        <div *ngIf="isBaby"><h1>You are registering as a baby</h1></div>
+
+

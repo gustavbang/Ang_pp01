@@ -10,7 +10,7 @@ export class Sitter {
      address: string;
      zipCode: string;
      city: string;
-     link: string;
+     link?: string;
      calendar?: any;
 
 
